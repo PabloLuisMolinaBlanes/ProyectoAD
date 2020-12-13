@@ -1,4 +1,7 @@
 # Portal de Usuarios
+
+Esta aplicación consiste en un CRUD que permite la creación, modificación, eliminación y visualización de personal en una universidad genérica, con el objetivo de generar páginas de listado de usuarios de forma rápida y sencilla para el usuario final.
+
 ![1](ADatosFotos/1.jpg)
 Menú de inicio
 
