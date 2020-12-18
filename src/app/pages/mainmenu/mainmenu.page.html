@@ -5,7 +5,7 @@
       Aniadir
     </ion-button>
     <ion-button class="danger" (click)="goToDelete()" expand="block" fill="clear" shape="round">
-      {{ mode }}
+      {{ mode }} y actualizar
     </ion-button>
   </ion-toolbar>
 </ion-header>
@@ -26,7 +26,7 @@
     </ion-label>
 <br>
   </ion-item>
-  <ion-content *ngIf="showed" id="center">
+  <div *ngIf="showed" id="center">
     <ion-label>Nombre y apellidos de miembro:</ion-label>
     <ion-input name="name" #name type="text" [(ngModel)]="currentPerson.name"></ion-input>
     <ion-label>Puesto laboral:</ion-label>
@@ -35,6 +35,6 @@
     <ion-input name="building" type="text" #building [(ngModel)]="currentPerson.building"></ion-input>
     <ion-label>Nombre de foto:</ion-label>
     <ion-input name="photo" type="text" #photo [(ngModel)]="currentPerson.picture"></ion-input>
-    <ion-button (click)="modifyPerson(currentPerson)">Modify</ion-button>
-  </ion-content>
+    <ion-button (click)="modifyPerson(currentPerson)">Modificar</ion-button>
+  </div>
 </ion-content>
