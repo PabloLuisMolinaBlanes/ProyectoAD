@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Portal de Usuarios</ion-title>
+    <ion-button (click)="goToEdit()" expand="block" fill="clear" shape="round">
+      Add
+    </ion-button>
+    <ion-button class="danger" (click)="goToDelete()" expand="block" fill="clear" shape="round">
+      {{ mode }}
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>{{ phrase }}</ion-list>
+  <ion-item class="container" *ngFor="let human of personArray; i as index">
+    <ion-label name="todelete" id='{{human.id}}'>
+      <ion-label>Nombre y apellidos: {{human.name}}</ion-label>
+      <p></p>
+      <ion-label>Trabajo: {{human.status}}</ion-label>
+      <p></p>
+      <ion-label>Edificio: {{human.building}}</ion-label>
+      <p></p>
+      <ion-label>Foto: {{ human.picture }}<img src='assets/{{human.picture}}'
+          (click)="setPerson(human.id, human.name, human.status, human.building, human.picture)" name="imgperson"
+          width='80px' height='80px'></ion-label>
+    </ion-label>
+<br>
+  </ion-item>
+  <ion-content *ngIf="showed" id="center">
+    <ion-label>Nombre y apellidos de miembro:</ion-label>
+    <ion-input name="name" #name type="text" [(ngModel)]="currentPerson.name"></ion-input>
+    <ion-label>Puesto laboral:</ion-label>
+    <ion-input name="position" type="text" #position [(ngModel)]="currentPerson.status"></ion-input>
+    <ion-label>Edificio:</ion-label>
+    <ion-input name="building" type="text" #building [(ngModel)]="currentPerson.building"></ion-input>
+    <ion-label>Nombre de foto:</ion-label>
+    <ion-input name="photo" type="text" #photo [(ngModel)]="currentPerson.picture"></ion-input>
+    <ion-button (click)="modifyPerson(currentPerson)">Modify</ion-button>
+  </ion-content>
+</ion-content>
