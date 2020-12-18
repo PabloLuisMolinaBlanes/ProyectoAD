@@ -20,7 +20,7 @@
       <p></p>
       <ion-label>Edificio: {{human.building}}</ion-label>
       <p></p>
-      <ion-label>Foto: {{ human.picture }}<img src='assets/{{human.picture}}'
+      <ion-label>Foto: {{ human.picture }}<img alt="Imagen de {{ human.name }}" src='assets/{{human.picture}}'
           (click)="setPerson(human.id, human.name, human.status, human.building, human.picture)" name="imgperson"
           width='80px' height='80px'></ion-label>
     </ion-label>
