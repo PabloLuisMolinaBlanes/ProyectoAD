@@ -12,12 +12,6 @@ export class UserService {
   baseUrl = 'http://localhost/';
   users: Array<any>;
   human: string;
-  man: User;
-  response: string;
-  test: JSON;
-  delete: Observable<HttpEvent<string>>;
-  create: Observable<HttpEvent<string>>;
-  modify: Observable<HttpEvent<string>>;
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
