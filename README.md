@@ -2,29 +2,29 @@
 
 Esta aplicación consiste en un CRUD que permite la creación, modificación, eliminación y visualización de personal en una universidad genérica, con el objetivo de generar páginas de listado de usuarios de forma rápida y sencilla para el usuario final.
 
-![1](ADatosFotos/1.jpg)
+![1](ADatosFotos/10.png)
 Menú de inicio
 
-![2](ADatosFotos/2.jpg)
+![2](ADatosFotos/11.png)
 Tras presionar Delete
 
-![3](ADatosFotos/3.jpg)
+![3](ADatosFotos/12.png)
 Tras presionar en una foto habiendo presionado Delete
 
-![4](ADatosFotos/4.jpg)
+![4](ADatosFotos/13.png)
 Tras presionar Create
 
-![5](ADatosFotos/5.jpg)
+![5](ADatosFotos/14.png)
 Tras crear un nuevo usuario y pinchar en la fotografía de ese usuario
 
-![6](ADatosFotos/6.jpg)
+![6](ADatosFotos/15.png)
 Tras pinchar en la fotografía del usuario y modificar los contenidos
 
-![7](ADatosFotos/7.jpg)
+![7](ADatosFotos/16.png)
 Tras modificar los contenidos
 
-![8](ADatosFotos/8.jpg)
+![8](ADatosFotos/17.png)
 Tras presionar Delete y pinchar en la fotografía del usuario
 
-![9](ADatosFotos/9.jpg)
+![9](ADatosFotos/18.png)
 Tras eliminar al usuario
