@@ -22,8 +22,8 @@ export class MainMenuPage implements OnInit {
   public number = 0;
   public showed = true;
   public delete = false;
-  public phrase = "Please, choose who to modify";
-  public mode = "Delete";
+  public phrase = "Escoja a quien modificar pinchando en la foto";
+  public mode = "Borrar";
 
   constructor(private userService: UserService, private router: Router, @Inject(DOCUMENT) document, private alertCtrl: AlertController) { }
 
@@ -51,17 +51,17 @@ export class MainMenuPage implements OnInit {
     this.currentPerson.picture = picture;
     if (this.mode === "Modify") {
       let alert = this.alertCtrl.create({
-        message: 'Are you sure you want to delete ' + this.currentPerson.name + '?',
+        message: 'Seguro que desea eliminar a ' + this.currentPerson.name + '?',
         buttons: [
           {
-            text: 'Cancel',
+            text: 'Cancelar',
             role: 'cancel',
             handler: () => {
               console.log('Cancel clicked');
             }
           },
           {
-            text: 'Yes',
+            text: 'Si',
             handler: () => {
               this.userService.deleteUser(this.currentPerson);
               console.log("Yes clicked");
@@ -84,11 +84,11 @@ export class MainMenuPage implements OnInit {
     this.showed = !(this.showed);
     this.delete = !(this.delete);
     if (this.showed) {
-      this.phrase = "Please, choose who to modify";
-      this.mode = "Delete";
+      this.phrase = "Escoja a quien modificar pinchando en la foto";
+      this.mode = "Borrar";
     } else {
-      this.phrase = "Please, choose who to delete";
-      this.mode = "Modify";
+      this.phrase = "Escoja a quien eliminar pinchando en la foto";
+      this.mode = "Modificar";
     }
   }
 }
